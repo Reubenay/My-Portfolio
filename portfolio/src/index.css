@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #0B0217; 
+  --color-card-bg: rgba(17, 9, 34, 0.6);
+  --color-primary: #9E4EFF;
+  --color-secondary: #007BFF;
+  --color-accent: #F065E6; 
+  --color-text-light: #E0D8F3;
+  --color-text-dark: #B0A8C2;
+  --color-border-color: rgba(158, 78, 255, 0.25);
+  --font-sans: 'Inter', 'sans-serif';
+  /* --animation-blink: blink 1s step-end infinite;  */
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-spin-slow: spin 8s linear infinite;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  font-family: var(--font-sans);
+  background-image: 
+    radial-gradient(at 20% 10%, hsla(271, 91%, 45%, 0.15) 0px, transparent 50%), 
+    radial-gradient(at 80% 90%, hsla(208, 100%, 50%, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+@keyframes blink {
+  /* from, to { opacity: 1; } */
+  50% { opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Slow Spin for React Icon */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
