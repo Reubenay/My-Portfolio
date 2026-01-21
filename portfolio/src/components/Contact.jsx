@@ -45,7 +45,7 @@ const Contact = () => {
     setStatus("sending");
 
     try {
-      const response = await fetch('https://my-portfolio-26o8.onrender.com', {
+      const response = await fetch('https://my-portfolio-26o8.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
