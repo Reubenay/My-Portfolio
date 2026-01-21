@@ -1,11 +1,13 @@
 pandas
 fastapi
 uvicorn
-dotenv
+python-dotenv
 pydantic
+email-validator
 pymysql
-SQLALchemy
-pyJWT
+SQLAlchemy
+PyJWT
 alembic
 fastapi-cors
 bcrypt
+psycopg2-binary
