@@ -23,7 +23,7 @@ const Admin = () => {
     const fetchContent = async () => {
         const headers = { 'Authorization': `Bearer ${authToken}` };
         try {
-            const contentRes = await fetch('http://localhost:8000/api/content');
+            const contentRes = await fetch('https://my-portfolio-26o8.onrender.com/api/content');
             const contentData = await contentRes.json();
             const about = contentData.find(item => item.section_name === 'about_text');
             if (about) setAboutText(about.content);
@@ -33,7 +33,7 @@ const Admin = () => {
 
         // 2. Fetch Messages (Protected Endpoint)
         try {
-            const msgRes = await fetch('http://localhost:8000/api/messages', { headers });
+            const msgRes = await fetch('https://my-portfolio-26o8.onrender.com/api/messages', { headers });
             if (msgRes.status === 401) { 
                 localStorage.removeItem("authToken"); 
                 navigate("/login");
@@ -53,7 +53,7 @@ const Admin = () => {
   const handleUpdateContent = async () => {
     setUpdateStatus("saving");
     try {
-        const response = await fetch('http://localhost:8000/api/content/update', {
+        const response = await fetch('https://my-portfolio-26o8.onrender.com/api/content/update', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json',
