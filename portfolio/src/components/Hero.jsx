@@ -102,7 +102,7 @@ const SocialLink = ({ href, icon }) => (
 const Hero = () => {
 
   // Typing Animation
-  const fullName = "I'm Reuben Mulero";
+  const fullName = "Reuben.";
   const [typedName, setTypedName] = useState("");
 
   useEffect(() => {
@@ -123,15 +123,15 @@ const Hero = () => {
 
           {/* TYPING + BLINKING NAME */}
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 tracking-tight">
-            Hi, <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
+            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary pb-6">
               {typedName}
             </span>
             <span className="blinking-cursor"></span>
           </h1>
 
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">
-              AI developer
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent pt-12 mt-6">
+              AI Developer
             </span>
           </h2>
           

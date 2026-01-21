@@ -12,7 +12,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
         
         {/*  Image */}
-        <div className="relative w-64 h-64 md:w-80 md:h-80 shrink-0">
+        <div className="relative w-54 h-54 md:w-60 md:h-60 shrink-0">
           <div className="absolute inset-0 rounded-full bg-linear-to-br from-primary to-secondary opacity-50 blur-xl animate-pulse"></div>
           <img 
             src="/profile-pic.jpg" 
